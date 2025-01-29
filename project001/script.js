@@ -3,8 +3,8 @@
 const form = document.querySelector("form"),
   statusTxt = form.querySelector(".button-area span");
 
-form.onsubmit = (e) => {
-  e.preventDefault(); //preventing form from submitting
+// form.onsubmit = (e) => {
+//   e.preventDefault(); //preventing form from submitting
   statusTxt.style.display = "block";
 
   let xhr = new XMLHttpRequest(); //creating new xml object

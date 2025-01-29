@@ -2,7 +2,14 @@
 
   //let's get all form values
 
-  $name = $_POST['name'];
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
+
+  echo "<pre>";
+  print_r($_POST);
+  echo "</pre>";
+
+  $name = $_POST["name"];
   $email = $_POST["email"];
   $phone = $_POST["phone"];
   $website = $_POST["website"];
